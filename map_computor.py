@@ -278,10 +278,10 @@ def log_rewards(vehicle_dict, action, rewards_info_dict, file_name, timestamp,re
 
 
 def get_rewards_from_sumo(vehicle_dict, action, rewards_info_dict,
-                        #   listLanes=['edge1-0_0', 'edge1-0_1','edge1-0_2','edge2-0_0','edge2-0_1','edge2-0_2',
-                        #          'edge3-0_0','edge3-0_1','edge3-0_2','edge4-0_0','edge4-0_1','edge4-0_2'],
-                        listLanes = ['edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2',
-                                    'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2'],):
+                          listLanes=['edge1-0_0', 'edge1-0_1','edge1-0_2','edge2-0_0','edge2-0_1','edge2-0_2',
+                                 'edge3-0_0','edge3-0_1','edge3-0_2','edge4-0_0','edge4-0_1','edge4-0_2'],):
+                        # listLanes = ['edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2',
+                        #             'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2', 'edge1-0_2'],):
     reward = 0
     import copy
     reward_detail_dict = copy.deepcopy(rewards_info_dict)
